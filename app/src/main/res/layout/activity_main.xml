@@ -14,7 +14,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="156dp"
             android:layout_marginEnd="16dp"
-            android:text="5x50+9"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -24,41 +23,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="259"
+            android:text=""
+            android:visibility="invisible"
             android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="@+id/workingTv"
             app:layout_constraintTop_toBottomOf="@+id/workingTv" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/actionClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="336dp"
             android:text="C"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/actionBack"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/actionBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+-"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
+            android:text="⌫"
+            app:layout_constraintEnd_toStartOf="@+id/actionPercent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toTopOf="@+id/button" />
+            app:layout_constraintStart_toEndOf="@+id/actionClear"
+            app:layout_constraintTop_toTopOf="@+id/actionClear" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/actionPercent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="%"
             app:layout_constraintEnd_toStartOf="@+id/actionPlus"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="@+id/button2" />
+            app:layout_constraintStart_toEndOf="@+id/actionBack"
+            app:layout_constraintTop_toTopOf="@+id/actionBack" />
 
         <Button
             android:id="@+id/actionPlus"
@@ -67,8 +67,8 @@
             android:text="+"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button3"
-            app:layout_constraintTop_toTopOf="@+id/button3" />
+            app:layout_constraintStart_toEndOf="@+id/actionPercent"
+            app:layout_constraintTop_toTopOf="@+id/actionPercent" />
 
         <Button
             android:id="@+id/num1"
@@ -79,7 +79,7 @@
             app:layout_constraintEnd_toStartOf="@+id/num2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/actionClear" />
 
         <Button
             android:id="@+id/num2"
